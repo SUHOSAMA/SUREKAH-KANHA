@@ -24,9 +24,11 @@
       The anecdotes and narratives of Krishna's life are generally titled as Krishna Līlā. He is a central character in the Mahabharata, the Bhagavata Purana, the Brahma Vaivarta Purana, and the Bhagavad Gita, and is mentioned in many Hindu philosophical, theological, and mythological texts.[19] They portray him in various perspectives: as a god-child, a prankster, a model lover, a divine hero, and the universal supreme being.[20] His iconography reflects these legends, and shows him in different stages of his life, such as an infant eating butter, a young boy playing a flute, a young boy with Radha or surrounded by female devotees; or a friendly charioteer giving counsel to Arjuna.[21]
     </p>
     <h2 class="text-center mt-2 mb-4">Open positions</h2>
-    <p>
-      {{jobs}}
-    </p>
+    <div>
+      {% for job in jobs %}
+       {% include 'jobitem.html'%}
+      {% endfor%}
+    </div>
       <div class="text-center">
          <button class="btn btn-primary btn-lg">Contact us</button>
         <p class="mt-4">copyright 2023,Kanha</p>
